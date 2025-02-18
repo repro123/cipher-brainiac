@@ -12,17 +12,21 @@
     <title>Cipher Brainiac EdTech</title>
   </head>
   <body
-    class="flex flex-col items-center justify-center gap-8 pt-4 pb-0 text-secondary-cta min-h-dvh font-inter"
+    class="flex flex-col items-center justify-center gap-8 pb-0 text-secondary-cta min-h-dvh font-inter"
   >
-    <header class="sticky top-0 z-20 w-full p-4 bg-white">
-      <div class="flex items-center justify-between w-full max-w-5xl mx-auto">
+    <header
+      class="sticky top-0 z-20 w-full p-4 md:pt-8 pb-0 bg-[rgba(255,255,255,0.8)] backdrop-blur-lg"
+    >
+      <div
+        class="flex items-center justify-between w-full max-w-5xl px-4 mx-auto rounded-full shadow-md md:gap-20 md:overflow-hidden md:py-2"
+      >
         <a href="#" aria-label="Cipher Brainiac Home" class="cursor-pointer"
           ><img
             src="./assets/image.png"
             alt=" Cipher Brainiac EdTech Logo"
             class="w-32"
         /></a>
-        <div>
+        <div class="md:w-full">
           <button
             id="openDialog"
             class="cursor-pointer md:hidden"
@@ -36,11 +40,11 @@
           <dialog
             role="dialog"
             aria-labelledby="primaryNavigation"
-            class="absolute right-0"
+            class="md:block md:relative md:w-full md:bg-inherit"
           >
             <button
               id="closeDialog"
-              class="cursor-pointer"
+              class="cursor-pointer md:hidden"
               aria-label="Close Navigation Links Panel"
             >
               <img
@@ -48,21 +52,65 @@
                 alt=""
               />
             </button>
-            <nav id="primaryNavigation">
-              <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">Course</a></li>
-                <li><a href="#">About Us</a></li>
-                <li><a href="#">Contact Us</a></li>
-                <li><a href="#">Log In</a></li>
-                <li><a href="#">Sign Up</a></li>
+            <nav
+              id="primaryNavigation"
+              aria-label="Primary Navigation"
+              class="md:w-full"
+            >
+              <ul
+                class="md:flex md:flex-row md:items-center md:justify-between md:text-secondary-cta"
+              >
+                <li>
+                  <a
+                    href="#"
+                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    >Home</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    >Course</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    >About Us</a
+                  >
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    >Contact Us</a
+                  >
+                </li>
+                <div class="flex items-center gap-4">
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block px-8 py-2 border border-[#ECECEC] rounded-full text-primary-text bg-[#ECECEC] hover:bg-white"
+                      >Log In</a
+                    >
+                  </li>
+                  <li>
+                    <a
+                      href="#"
+                      class="inline-block px-8 py-2 text-white border rounded-full border-primary-cta bg-primary-cta hover:bg-white hover:text-primary-cta"
+                      >Sign Up</a
+                    >
+                  </li>
+                </div>
               </ul>
             </nav>
           </dialog>
         </div>
       </div>
     </header>
-    <main class="flex flex-col w-full gap-8">
+    <main class="flex flex-col w-full gap-8 pt-4">
       <section class="px-4">
         <div
           class="flex flex-col justify-center max-w-5xl gap-4 mx-auto overflow-hidden text-center md:flex-row"
