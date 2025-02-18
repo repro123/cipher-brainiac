@@ -1,0 +1,907 @@
+<html lang="en" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./src/output.css" />
+    <title>Cipher Brainiac EdTech</title>
+  </head>
+  <body
+    class="flex flex-col items-center justify-center gap-8 pt-4 pb-0 text-secondary-cta min-h-dvh font-inter"
+  >
+    <header class="sticky top-0 z-20 w-full p-4 bg-white">
+      <div class="flex items-center justify-between w-full max-w-5xl mx-auto">
+        <a href="#" aria-label="Cipher Brainiac Home" class="cursor-pointer"
+          ><img
+            src="./assets/image.png"
+            alt=" Cipher Brainiac EdTech Logo"
+            class="w-32"
+        /></a>
+        <div>
+          <button
+            id="openDialog"
+            class="cursor-pointer md:hidden"
+            aria-label="Open Navigation Links Panel"
+          >
+            <img
+              src="./assets/menu_28dp_1E90FF_FILL0_wght400_GRAD0_opsz24.svg"
+              alt=""
+            />
+          </button>
+          <dialog
+            role="dialog"
+            aria-labelledby="primaryNavigation"
+            class="absolute right-0"
+          >
+            <button
+              id="closeDialog"
+              class="cursor-pointer"
+              aria-label="Close Navigation Links Panel"
+            >
+              <img
+                src="./assets/close_24dp_1E90FF_FILL0_wght400_GRAD0_opsz24.svg"
+                alt=""
+              />
+            </button>
+            <nav id="primaryNavigation">
+              <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Course</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Contact Us</a></li>
+                <li><a href="#">Log In</a></li>
+                <li><a href="#">Sign Up</a></li>
+              </ul>
+            </nav>
+          </dialog>
+        </div>
+      </div>
+    </header>
+    <main class="flex flex-col w-full gap-8">
+      <section class="px-4">
+        <div
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto overflow-hidden text-center md:flex-row"
+        >
+          <div class="md:text-left md:w-[60%] flex flex-col">
+            <h1 class="text-4xl font-bold md:text-5xl text-primary-text">
+              Unlock Your Potential with
+              <span
+                class="relative inline-block before:absolute before:border-2 before:border-[#FFC107] before:rounded-[50%] before:h-8 md:before:h-9 before:w-20"
+                >Tech</span
+              >
+              Skills for Tomorrow
+            </h1>
+            <p class="mt-4">
+              Join our passionate tech community whether you're just starting or
+              advancing your skills, we've got you covered.
+            </p>
+            <a
+              href="#"
+              class="inline-block p-4 mx-auto mt-4 text-white transition-all duration-500 border-2 cursor-pointer trsacking-wider md:ml-0 md:mt-8 border-primary-cta bg-primary-cta w-fit rounded-2xl hover:text-primary-cta hover:bg-white"
+              >Register now</a
+            >
+            <div class="mt-4 md:mt-auto">
+              <div
+                class="flex items-center justify-center mx-auto md:mx-0 md:justify-start"
+              >
+                <img src="./assets/row1.png" alt="" class="max-w-14" />
+                <img src="./assets/row2.png" alt="" class="-m-2.5 max-w-14" />
+                <img src="./assets/row3.png" alt="" class="-m-2.5 max-w-14" />
+                <img src="./assets/row4.png" alt="" class="-m-2.5 max-w-14" />
+                <img src="./assets/row5.png" alt="" class="-m-2.5 max-w-14" />
+                <img src="./assets/row6.png" alt="" class="-m-2.5 max-w-14" />
+              </div>
+              <p class="mt-2 text-xs">
+                10k+ students already joined the Cipher Brainiac. Get started
+                today!
+              </p>
+            </div>
+          </div>
+          <div class="flex md:w-[40%] md:grid md:grid-cols-2">
+            <img
+              src="./assets/heroimage1.png"
+              alt="students studying on a tablet"
+              class="inline-block w-48 max-w-full mx-auto rounded-full md:rounded-none h-60 md:col-start-2"
+            />
+            <img
+              src="./assets/heroimage2.png"
+              alt=""
+              class="hidden w-48 max-w-full mx-auto md:block h-60 md:col-start-1 md:-mt-20"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4">
+        <div
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto overflow-hidden text-center"
+        >
+          <div class="md:text-left md:mt-4">
+            <h2 class="text-3xl font-bold text-primary-text">Our Programs</h2>
+            <p>Career skills that work</p>
+          </div>
+          <div class="px-4 py-8 bg-tertiary rounded-2xl">
+            <div
+              class="flex flex-col items-center justify-center gap-4 md:flex-row md:items-stretch"
+            >
+              <!-- card one -->
+              <div class="flex flex-col p-4 bg-white rounded-2xl">
+                <a href="#" class="cursor-pointer hover:opacity-80">
+                  <img
+                    src="./assets/project-management.png"
+                    alt="Project management"
+                    class="max-w-full"
+                /></a>
+                <div class="flex flex-col flex-1 gap-6 mt-3 text-left">
+                  <h3 class="text-2xl font-bold text-primary-text">
+                    <a href="#" class="cursor-pointer hover:text-primary-cta"
+                      >Project Management</a
+                    >
+                  </h3>
+                  <p class="mt-auto">Beginner course</p>
+                </div>
+              </div>
+              <!-- card two -->
+              <div class="flex flex-col p-4 bg-white rounded-2xl">
+                <a href="#" class="cursor-pointer hover:opacity-80">
+                  <img
+                    src="./assets/ui-ux.png"
+                    alt="UI/UX Design"
+                    class="max-w-full"
+                /></a>
+                <div class="flex flex-col flex-1 gap-6 mt-3 text-left">
+                  <h3 class="text-2xl font-bold text-primary-text">
+                    <a href="#" class="cursor-pointer hover:text-primary-cta"
+                      >UI/UX Design</a
+                    >
+                  </h3>
+                  <p class="mt-auto">Beginner course</p>
+                </div>
+              </div>
+              <!-- card three -->
+              <div class="flex flex-col p-4 bg-white rounded-2xl">
+                <a href="#" class="cursor-pointer hover:opacity-80">
+                  <img
+                    src="./assets/data-analysis.png"
+                    alt="Data Analysis"
+                    class="max-w-full"
+                /></a>
+                <div class="flex flex-col flex-1 gap-6 mt-3 text-left">
+                  <h3 class="text-2xl font-bold text-primary-text">
+                    <a href="#" class="cursor-pointer hover:text-primary-cta"
+                      >Data Analysis</a
+                    >
+                  </h3>
+                  <p class="mt-auto">Beginner course</p>
+                </div>
+              </div>
+            </div>
+            <button
+              aria-label="view 7 more courses"
+              class="block p-2 mt-4 tracking-wider text-left text-white transition-all duration-500 border-2 cursor-pointer border-primary-cta bg-primary-cta w-fit rounded-2xl hover:text-primary-cta hover:bg-white"
+            >
+              View 7 more
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4">
+        <div
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto text-center md:text-left"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-4 md:flex-row md:items-stretch *:w-full"
+          >
+            <div
+              class="flex flex-col items-center justify-center gap-4 md:items-start"
+            >
+              <hgroup
+                class="flex flex-col items-center justify-center gap-4 md:flex-col-reverse md:gap-8 md:items-start"
+              >
+                <div class="flex items-center justify-center gap-1">
+                  <h2
+                    class="text-3xl font-bold text-primary-text relative inline-block before:absolute before:border-2 before:border-pseudo before:rounded-[50%] before:h-8 before:w-28"
+                  >
+                    About Us
+                  </h2>
+                  <img src="./assets/about-us.png" alt="" class="w-8" />
+                </div>
+                <p
+                  class="px-4 py-2 rounded-xl text-primary-cta bg-tertiary md:text-xs"
+                >
+                  Why Cipher Braniac?
+                </p>
+              </hgroup>
+              <p class="text-balance md:text-wrap">
+                At Cipher braniac, we're passionate about making learning
+                exciting and accessible for everyone.
+              </p>
+              <p class="text-balance md:text-wrap">
+                Our mission is simple: Expert-led lessons from industry
+                professionals to empower students, teachers, and lifelong
+                learners with engaging, easy-to-use tools that make education
+                more impactful.
+              </p>
+            </div>
+            <div>
+              <img
+                src="./assets/about-us-Group.png"
+                alt="man using cipher brainiac on mobile phone"
+                class="max-w-full m-auto w-3xs"
+              />
+            </div>
+          </div>
+
+          <div
+            class="flex flex-col items-center justify-center gap-4 *:w-full md:mt-4"
+          >
+            <h2 class="text-3xl font-bold text-primary-text">
+              What We Stand For:
+            </h2>
+            <div
+              class="flex flex-col items-center md:items-stretch justify-center gap-4 md:flex-row *:w-full"
+            >
+              <!-- card one -->
+              <div
+                class="flex flex-col items-center justify-center gap-1 md:items-start"
+              >
+                <img
+                  src="./assets/innovation.png"
+                  alt=""
+                  class="w-20 max-w-full"
+                />
+                <h3 class="text-2xl font-bold text-primary-text">Innovation</h3>
+                <p class="text-balance md:text-wrap md:mt-auto">
+                  Using technology to make learning fun, engaging, and
+                  interactive
+                </p>
+              </div>
+              <!-- card two -->
+              <div
+                class="flex flex-col items-center justify-center gap-1 md:items-start"
+              >
+                <img
+                  src="./assets/inclusivity.png"
+                  alt=""
+                  class="w-20 max-w-full"
+                />
+                <h3 class="text-2xl font-bold text-primary-text">
+                  Inclusivity
+                </h3>
+                <p class="text-balance md:text-wrap md:mt-auto">
+                  Making sure education is accessible to everyone, especially
+                  those in underserved areas.
+                </p>
+              </div>
+              <!-- card three -->
+              <div
+                class="flex flex-col items-center justify-center gap-1 md:items-start"
+              >
+                <img
+                  src="./assets/excellence.png"
+                  alt=""
+                  class="w-20 max-w-full"
+                />
+                <h3 class="text-2xl font-bold text-primary-text">Excellence</h3>
+                <p class="text-balance md:text-wrap md:mt-auto">
+                  Working with the best teachers and organizations to provide
+                  top-quality content.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4 py-12 bg-primary-cta">
+        <div
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto text-center"
+        >
+          <div
+            class="relative p-4 shadow-[inset_0_4px_6px_-1px_rgba(0,0,0,0.5)] bg-glass rounded-2xl md:p-12 overflow-hidden"
+          >
+            <img
+              class="hidden w-48 md:-top-8 md:-left-14 md:absolute md:block"
+              src="./assets/image-36.png"
+              alt=""
+            />
+            <img
+              class="hidden w-48 md:bottom-0 md:right-0 md:absolute md:block"
+              src="./assets/absolute-image.png"
+              alt=""
+            />
+            <div
+              class="flex flex-col items-center justify-center gap-4 p-4 bg-white rounded-2xl md:grid md:grid-cols-3"
+            >
+              <div class="flex flex-col items-center justify-center gap-2">
+                <img src="./assets/learn-anywhere.png" alt="" />
+                <p class="text-lg text-primary-text">Learn anywhere</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-2">
+                <img src="./assets/practical-learning.png" alt="" />
+                <p class="text-lg text-primary-text">Practical learning</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-2">
+                <img src="./assets/virtual-bootcamp.png" alt="" />
+                <p class="text-lg text-primary-text">Virtual Bootcamp</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-2">
+                <img src="./assets/alumni-network.png" alt="" />
+                <p class="text-lg text-primary-text">
+                  Alumni networking & job opportunities
+                </p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-2">
+                <img src="./assets/smart-suggestion.png" alt="" />
+                <p class="text-lg text-primary-text">Smart suggestions</p>
+              </div>
+              <div class="flex flex-col items-center justify-center gap-2">
+                <img src="./assets/internship.png" alt="" />
+                <p class="text-lg text-primary-text">
+                  Internship opportunities
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4">
+        <div
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto mt-4 text-center"
+        >
+          <hgroup
+            class="flex flex-col items-center justify-center gap-4 md:flex-col-reverse md:gap-8 md:items-start"
+          >
+            <h2 class="text-3xl font-bold text-primary-text">
+              What our students say
+            </h2>
+            <p
+              class="px-4 py-2 capitalize rounded-xl text-primary-cta bg-tertiary md:text-xs"
+            >
+              testimonials
+            </p>
+          </hgroup>
+          <p class="text-balance md:text-wrap md:text-left md:max-w-[40ch]">
+            Discover how our courses have empowered learners to gain new skills,
+            achieve their goals, and thrive in the tech industry.
+          </p>
+          <div>
+            <img
+              src="./assets/testimonials.png"
+              alt="network of students"
+              class="block mx-auto max-w-72 w-3xs md:m-auto md:max-w-[30rem] md:w-[30rem]"
+            />
+          </div>
+          <div
+            class="flex flex-col items-center justify-center gap-4 md:grid md:grid-cols-3 md:auto-rows-fr *:shadow-md"
+          >
+            <div
+              class="rounded-2xl grow bg-card bg-[url(/assets/adeyemi-bg.png)] bg-no-repeat bg-bottom bg-[size:100%_50%] flex flex-col-reverse gap-6 items-center justify-center p-4 h-full"
+            >
+              <figure
+                class="flex flex-col items-center justify-center gap-6 grow"
+              >
+                <img
+                  src="./assets/adeyemi.png"
+                  alt="Adeyemi Femi"
+                  class="block w-20 max-w-full mx-auto"
+                />
+                <figcaption
+                  class="flex flex-col items-center justify-center gap-1"
+                >
+                  <p class="font-bold text-primary-text">Adeyemi Femi</p>
+                  <p>Front-End Development</p>
+                </figcaption>
+              </figure>
+              <blockquote class="grow">
+                <q
+                  >The software development course transformed my career! The
+                  hands-on projects and supportive instructors made all the
+                  difference.</q
+                >
+              </blockquote>
+            </div>
+            <div
+              class="rounded-2xl grow bg-card bg-[url(/assets/johnson-bg.png)] bg-no-repeat bg-bottom bg-[size:100%_50%] flex flex-col-reverse gap-6 items-center justify-center p-4 h-full"
+            >
+              <figure
+                class="flex flex-col items-center justify-center gap-6 grow"
+              >
+                <img
+                  src="./assets/johnson.png"
+                  alt=""
+                  class="block w-20 max-w-full mx-auto"
+                />
+                <figcaption
+                  class="flex flex-col items-center justify-center gap-1"
+                >
+                  <p>Johnson Alice</p>
+                  <p>UI/UX Design</p>
+                </figcaption>
+              </figure>
+              <blockquote>
+                <q
+                  >I loved the UI/UX course! It not only taught me design
+                  principles but also how to think from the user's
+                  perspective.</q
+                >
+              </blockquote>
+            </div>
+            <div
+              class="rounded-2xl grow bg-card bg-[url(/assets/cynthia-bg.png)] bg-no-repeat bg-bottom bg-[size:100%_50%] flex flex-col-reverse gap-6 items-center justify-center p-4 h-full"
+            >
+              <figure
+                class="flex flex-col items-center justify-center gap-6 grow"
+              >
+                <img
+                  src="./assets/cynthia.png"
+                  alt="Daniel Cynthia"
+                  class="block w-20 max-w-full mx-auto"
+                />
+                <figcaption
+                  class="flex flex-col items-center justify-center gap-1"
+                >
+                  <p>Daniel Cynthia</p>
+                  <p>Data Science</p>
+                </figcaption>
+              </figure>
+              <blockquote>
+                <q
+                  >Thanks to the data science program, I landed my dream job!
+                  The curriculum was practical and directly applicable to my
+                  work</q
+                >
+              </blockquote>
+            </div>
+            <div
+              class="rounded-2xl grow bg-card bg-[url(/assets/david-bg.png)] bg-no-repeat bg-bottom bg-[size:100%_50%] flex flex-col-reverse gap-6 items-center justify-center p-4 md:col-start-2 h-full"
+            >
+              <figure
+                class="flex flex-col items-center justify-center gap-6 grow"
+              >
+                <img
+                  src="./assets/David.png"
+                  alt=""
+                  class="block w-20 max-w-full mx-auto"
+                />
+                <figcaption
+                  class="flex flex-col items-center justify-center gap-1"
+                >
+                  <p>David Smith</p>
+                  <p>Back-End Development</p>
+                </figcaption>
+              </figure>
+              <blockquote>
+                <q
+                  >I Landed my first 6 figures salary after i finished my
+                  program with Cipher Brainiac.</q
+                >
+              </blockquote>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="px-4">
+        <div
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto mt-4 text-center md:gap-8 md:flex-row md:text-left"
+        >
+          <div
+            class="flex flex-col items-center justify-center gap-4 md:items-start md:justify-stretch"
+          >
+            <hgroup
+              class="flex flex-col items-center justify-center gap-4 md:flex-col-reverse md:gap-8 md:items-start"
+            >
+              <h2 class="text-3xl font-bold text-primary-text">
+                Your feedback helps us improve.
+              </h2>
+              <p
+                class="px-8 py-2 capitalize rounded-xl text-primary-cta bg-tertiary md:text-xs"
+              >
+                Write Us
+              </p>
+            </hgroup>
+            <p>
+              We are here to help you and we would love to connect with you.
+            </p>
+            <img
+              src="./assets/form-img.png"
+              alt="co-workers discussing happily in office"
+              class="max-w-full w-3xs rounded-2xl md:w-full"
+            />
+            <h2 class="text-3xl font-bold text-primary-text md:mt-auto">
+              Our Mission
+            </h2>
+            <p class="text-balance">
+              We empower learners and educators with innovative, accessible
+              tools that make learning engaging and inclusive, supporting
+              everyone on their educational journey.
+            </p>
+          </div>
+          <form
+            action=""
+            class="flex flex-col items-center justify-center text-primary-text w-full gap-4 *:w-full"
+          >
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(input:focus)_label]:text-primary-cta"
+            >
+              <label for="fullName" class="text-left"
+                >Full Name
+                <span aria-hidden="true" class="text-red-600">*</span></label
+              >
+              <div
+                class="flex items-center justify-center h-12 gap-2 border-2 border-secondary-cta [&:has(input:focus)]:border-primary-cta px-1"
+              >
+                <img src="./assets/fullname.png" alt="" />
+                <input
+                  class="w-full h-full outline-0 caret-primary-cta"
+                  type="text"
+                  id="fullName"
+                  required
+                  autocomplete="name"
+                  name="fullName"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(input:focus)_label]:text-primary-cta"
+            >
+              <label for="mail" class="text-left"
+                >Email
+                <span aria-hidden="true" class="text-red-600">*</span></label
+              >
+              <div
+                class="flex items-center px-1 justify-center h-12 gap-2 border-2 border-secondary-cta [&:has(input:focus)]:border-primary-cta"
+              >
+                <img src="./assets/mail-01.png" alt="" />
+                <input
+                  class="w-full h-full outline-0 caret-primary-cta"
+                  type="email"
+                  id="mail"
+                  required
+                  autocomplete="email"
+                  name="email"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(input:focus)_label]:text-primary-cta"
+            >
+              <label for="phone" class="text-left"
+                >Phone Number
+                <span aria-hidden="true" class="text-red-600">*</span></label
+              >
+              <div
+                class="flex items-center justify-center h-12 gap-2 border-2 border-secondary-cta [&:has(input:focus)]:border-primary-cta px-1"
+              >
+                <img src="./assets/telephone.png" alt="" />
+                <input
+                  class="w-full h-full outline-0 caret-primary-cta"
+                  type="tel"
+                  id="phone"
+                  required
+                  autocomplete="tel"
+                  name="tel"
+                />
+              </div>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(input:focus)_label]:text-primary-cta"
+            >
+              <label for="role" class="text-left">Role</label>
+              <div
+                class="flex items-center justify-center h-12 gap-2 border-2 border-secondary-cta [&:has(input:focus)]:border-primary-cta px-1"
+              >
+                <img src="./assets/mentoring.png" alt="" />
+                <input
+                  type="text"
+                  id="role"
+                  name="role"
+                  class="w-full h-full outline-0 caret-primary-cta"
+                />
+              </div>
+            </div>
+
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(select:focus)_label]:text-primary-cta"
+            >
+              <label for="interest" class="text-left"
+                >Area of Interest
+                <span aria-hidden="true" class="text-red-600">*</span></label
+              >
+              <select
+                name="interest"
+                id="interest"
+                class="h-12 gap-2 px-1 border-2 border-secondary-cta focus:border-primary-cta outline-0"
+              >
+                <option value="" disabled selected>Select One</option>
+                <option value="Front-End Development">
+                  Front-End Development
+                </option>
+                <option value="Back-End Development">
+                  Back-End Development
+                </option>
+                <option value="UI/UX Design">UI/UX Design</option>
+                <option value="Data Science">Data Science</option>
+                <option value="Product Management">Product Management</option>
+              </select>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(select:focus)_label]:text-primary-cta"
+            >
+              <label for="hearAboutUs" class="text-left"
+                >How did you hear about us?</label
+              >
+              <select
+                name="hearAboutUs"
+                id="hearAboutUs"
+                class="h-12 gap-2 px-1 border-2 border-secondary-cta focus:border-primary-cta outline-0"
+              >
+                <option value="" selected disabled>Select One</option>
+                <option value="Friend">Friend</option>
+                <option value="Twitter">Twitter</option>
+                <option value="WhatsApp">WhatsApp</option>
+                <option value="LinkedIn">LinkedIn</option>
+                <option value="Facebook">Facebook</option>
+              </select>
+            </div>
+            <div
+              class="flex flex-col justify-center gap-1 [&:has(textarea:focus)_label]:text-primary-cta"
+            >
+              <label for="message" class="text-left">Message</label>
+              <div
+                class="flex items-center justify-center h-20 gap-2 border-2 border-secondary-cta [&:has(input:focus)]:border-primary-cta px-1"
+              >
+                <img
+                  src="./assets/pencil-edit-02.png"
+                  alt=""
+                  class="place-self-start"
+                />
+                <textarea
+                  name="message"
+                  id="message"
+                  class="w-full h-full resize-none outline-0 caret-primary-cta"
+                ></textarea>
+              </div>
+            </div>
+            <input
+              type="submit"
+              value="Send Message"
+              class="py-2 text-white transition-all duration-500 border-2 rounded-full bg-primary-cta border-primary-cta hover:text-primary-cta hover:bg-white"
+            />
+          </form>
+        </div>
+      </section>
+
+      <section class="px-4">
+        <div
+          class="grid max-w-5xl gap-4 mx-auto text-center text-white place-items-center md:mt-4"
+        >
+          <div
+            class="flex flex-col items-center justify-center w-full gap-8 px-4 py-8 md:p-12 bg-primary-cta rounded-2xl md:flex-row md:justify-between"
+          >
+            <div
+              class="flex flex-col items-center justify-center gap-4 md:gap-16"
+            >
+              <h3 class="text-2xl font-medium">Ready to acquire new skills?</h3>
+              <form action="" class="w-full">
+                <label for="email2" class="sr-only">Email</label>
+                <div
+                  class="flex w-full h-12 py-0.5 pl-4 pr-0.5 bg-white rounded-full"
+                >
+                  <input
+                    class="h-full outline-0 text-primary-text caret-primary-cta"
+                    type="email2"
+                    id="email2"
+                    name="email2"
+                    placeholder="Your email"
+                    required
+                  />
+                  <button
+                    class="inline-block w-full h-full px-4 py-1 border rounded-full cursor-pointer bg-primary-cta outline-0 border-primary-cta hover:text-primary-cta hover:bg-white"
+                  >
+                    Send
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="md:w-[30%] md:place-self-end md:text-left">
+              <p class="text-lg">Cipher Brainac for digital skills.</p>
+              <p class="mt-2 text-balance md:text-wrap opacity-80">
+                We’re here to listen to your needs! Let us know how we can
+                assist you.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="px-4 mt-8 text-primary-text">
+      <div
+        class="flex flex-col justify-center max-w-5xl px-4 mx-auto text-center"
+      >
+        <div class="flex flex-col gap-2 md:grid md:grid-cols-3">
+          <div
+            class="flex flex-col items-center justify-center gap-4 font-medium md:items-start md:text-left"
+          >
+            <img
+              src="./assets/image.png"
+              alt="cipher brainiac logo"
+              class="block max-w-40 md:mt-0 md:ml-0"
+            />
+            <p class="text-balance">
+              Cipher Brainac helps you learn new things, have fun, and grow
+              smarter! Come join our big family of learners, and let's make your
+              future super bright together!
+            </p>
+          </div>
+          <div class="grid">
+            <ul
+              class="flex flex-col gap-2 items-center justify-center *:underline-offset-2 *:underline md:text-left md:items-start md:justify-start justify-self-center self-end"
+            >
+              <li>
+                <a href="#" class="cursor-pointer hover:text-primary-cta"
+                  >Virtual Bootcamp</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+2349023046042"
+                  class="cursor-pointer hover:text-primary-cta"
+                  >+234 90 230 46042</a
+                >
+              </li>
+              <li>
+                <a
+                  href="tel:+2348145908647"
+                  class="cursor-pointer hover:text-primary-cta"
+                  >+234 81 4590 8647</a
+                >
+              </li>
+              <li>
+                <a
+                  href="mailto:cipherbrainiac@gmail.com"
+                  class="cursor-pointer hover:text-primary-cta"
+                  >cipherbrainiac@gmail.com
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="grid">
+            <ul
+              class="flex flex-col gap-2 items-center justify-center *:underline-offset-2 *:underline md:text-left md:items-start md:justify-start justify-self-center self-end"
+            >
+              <li>
+                <a href="#" class="cursor-pointer hover:text-primary-cta"
+                  >About Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="cursor-pointer hover:text-primary-cta"
+                  >Contact Us</a
+                >
+              </li>
+              <li>
+                <a href="#" class="cursor-pointer hover:text-primary-cta"
+                  >Courses</a
+                >
+              </li>
+              <li>
+                <a href="#" class="cursor-pointer hover:text-primary-cta"
+                  >Membership</a
+                >
+              </li>
+            </ul>
+          </div>
+        </div>
+        <div class="flex flex-col gap-4 mt-8 md:flex-row md:mt-16">
+          <h4
+            class="text-xl font-bold md:border-r-4 md:pr-4 md:inline-block text-primary-text md:border-r-primary-cta"
+          >
+            Follow Us
+          </h4>
+          <ul class="flex items-center justify-center gap-8">
+            <li>
+              <a
+                href="#"
+                class="grid border-b-4 border-transparent cursor-pointer place-items-center hover:border-primary-cta"
+                aria-label="LinkedIn"
+                ><img
+                  src="./assets/linkedin.png"
+                  alt=""
+                  class="inline-block w-6 h-6"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="grid border-b-4 border-transparent cursor-pointer place-items-center hover:border-primary-cta"
+                aria-label="Facebook"
+                ><img
+                  src="./assets/facebook.png"
+                  alt=""
+                  class="inline-block w-6 h-6"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="grid border-b-4 border-transparent cursor-pointer place-items-center hover:border-primary-cta"
+                aria-label="YouTube"
+                ><img
+                  src="./assets/youtube.png"
+                  alt=""
+                  class="inline-block w-6 h-6"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="grid border-b-4 border-transparent cursor-pointer place-items-center hover:border-primary-cta"
+                aria-label="instagram"
+                ><img
+                  src="./assets/instagram.png"
+                  alt=""
+                  class="inline-block w-6 h-6"
+              /></a>
+            </li>
+            <li>
+              <a
+                href="#"
+                class="grid border-b-4 border-transparent cursor-pointer place-items-center hover:border-primary-cta"
+                aria-label="Twitter"
+                ><img src="./assets/x.png" alt="" class="inline-block w-6 h-6"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <!-- <hr /> -->
+        <div
+          class="flex flex-col items-center justify-center gap-2 pt-4 mt-8 border-t md:text-sm border-t-secondary-cta md:flex-row md:justify-between"
+        >
+          <p>Copyright 2025 Cipher Brainiac</p>
+          <ul
+            class="flex flex-col gap-2 items-center justify-center *:underline *:underline-offset-2 md:flex-row md:gap-4"
+          >
+            <li>
+              <a href="#" class="cursor-pointer hover:text-primary-cta"
+                >Terms of Service</a
+              >
+            </li>
+            <li>
+              <a href="#" class="cursor-pointer hover:text-primary-cta"
+                >Privacy Policy</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <footer
+      aria-label="attribution"
+      class="grid w-full px-4 py-2 mt-auto bg-black border-t border-t-primary-cta place-items-center"
+    >
+      <p class="mx-auto text-sm">
+        Designed by
+        <a
+          href="https://www.behance.net/adebamboteniola"
+          class="inline-block font-bold text-transparent border border-transparent cursor-pointer bg-gradient-to-r from-primary-cta via-red-500 to-primary-cta bg-clip-text hover:border-primary-cta"
+          >Adebambo Kafilat</a
+        >, coded by
+        <a
+          href="https://github.com/repro123"
+          class="inline-block font-bold text-transparent underline border border-transparent cursor-pointer bg-gradient-to-r from-primary-cta via-red-500 to-primary-cta bg-clip-text hover:border-primary-cta"
+          >Bello Ibrahim</a
+        >
+      </p>
+    </footer>
+    <script src="./script.js"></script>
+  </body>
+</html>
