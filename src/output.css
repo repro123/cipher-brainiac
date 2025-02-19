@@ -615,12 +615,6 @@
   .min-h-dvh {
     min-height: 100dvh;
   }
-  .w-20 {
-    width: calc(var(--spacing) * 20);
-  }
-  .w-32 {
-    width: calc(var(--spacing) * 32);
-  }
   .w-3xs {
     width: var(--container-3xs);
   }
@@ -629,6 +623,12 @@
   }
   .w-8 {
     width: calc(var(--spacing) * 8);
+  }
+  .w-20 {
+    width: calc(var(--spacing) * 20);
+  }
+  .w-32 {
+    width: calc(var(--spacing) * 32);
   }
   .w-48 {
     width: calc(var(--spacing) * 48);
@@ -1188,6 +1188,27 @@
   .max-md\:gap-4 {
     @media (width < 48rem) {
       gap: calc(var(--spacing) * 4);
+    }
+  }
+  .max-md\:border {
+    @media (width < 48rem) {
+      border-style: var(--tw-border-style);
+      border-width: 1px;
+    }
+  }
+  .max-md\:border-black {
+    @media (width < 48rem) {
+      border-color: var(--color-black);
+    }
+  }
+  .max-md\:border-green-500 {
+    @media (width < 48rem) {
+      border-color: var(--color-green-500);
+    }
+  }
+  .max-md\:border-red-500 {
+    @media (width < 48rem) {
+      border-color: var(--color-red-500);
     }
   }
   .max-md\:p-0 {
