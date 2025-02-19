@@ -612,6 +612,9 @@
   .h-full {
     height: 100%;
   }
+  .h-svh {
+    height: 100svh;
+  }
   .min-h-dvh {
     min-height: 100dvh;
   }
