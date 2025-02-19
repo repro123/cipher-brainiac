@@ -1160,9 +1160,19 @@
       height: 100vh;
     }
   }
+  .max-md\:h-svh {
+    @media (width < 48rem) {
+      height: 100svh;
+    }
+  }
   .max-md\:max-h-screen {
     @media (width < 48rem) {
       max-height: 100vh;
+    }
+  }
+  .max-md\:max-h-svh {
+    @media (width < 48rem) {
+      max-height: 100svh;
     }
   }
   .max-md\:min-h-dvh {
