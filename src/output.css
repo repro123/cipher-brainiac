@@ -1155,6 +1155,11 @@
       height: 100vh;
     }
   }
+  .max-md\:max-h-screen {
+    @media (width < 48rem) {
+      max-height: 100vh;
+    }
+  }
   .max-md\:min-h-dvh {
     @media (width < 48rem) {
       min-height: 100dvh;
