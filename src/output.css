@@ -1150,6 +1150,11 @@
       height: calc(90dvh);
     }
   }
+  .max-md\:h-full {
+    @media (width < 48rem) {
+      height: 100%;
+    }
+  }
   .max-md\:h-screen {
     @media (width < 48rem) {
       height: 100vh;
