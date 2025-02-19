@@ -11,3 +11,11 @@
   --color-glass: rgba(213, 223, 233, 0.5);
   --color-card: #fafafa;
 }
+
+@layer base {
+  body.overflow-hidden {
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
+  }
+}

@@ -29,7 +29,7 @@
         <div class="md:w-full">
           <button
             id="openDialog"
-            class="cursor-pointer md:hidden"
+            class="cursor-pointer md:hidden focus:outline-primary-cta focus:outline-2"
             aria-label="Open Navigation Links Panel"
           >
             <img
@@ -40,11 +40,11 @@
           <dialog
             role="dialog"
             aria-labelledby="primaryNavigation"
-            class="md:block md:relative md:w-full md:bg-inherit"
+            class="border-0 md:block md:relative md:w-full md:bg-inherit max-md:min-h-dvh max-md:max-w-screen max-md:ml-auto max-md:p-0 outline-0 [&::backdrop]:bg-secondary-cta/10 [&::backdrop]:backdrop-blur-md"
           >
             <button
               id="closeDialog"
-              class="cursor-pointer md:hidden"
+              class="absolute cursor-pointer top-8 right-6 md:hidden focus:outline-primary-cta focus:outline-2"
               aria-label="Close Navigation Links Panel"
             >
               <img
@@ -55,51 +55,51 @@
             <nav
               id="primaryNavigation"
               aria-label="Primary Navigation"
-              class="md:w-full"
+              class="md:w-full max-md:grow max-md:flex max-md:flex-col max-md:h-screen max-md:pb-4 max-md:px-4 max-md:pt-16"
             >
               <ul
-                class="md:flex md:flex-row md:items-center md:justify-between md:text-secondary-cta"
+                class="md:flex md:flex-row md:items-center md:justify-between md:text-secondary-cta max-md:flex max-md:flex-col max-md:gap-4 max-md:grow max-md:mt-4 max-md:text-lg"
               >
                 <li>
                   <a
                     href="#"
-                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    class="inline-block border-b cursor-pointer hover:text-primary-cta border-b-transparent hover:border-b-primary-cta focus:text-primary-cta focus:border-b-primary-cta"
                     >Home</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    class="inline-block border-b cursor-pointer hover:text-primary-cta border-b-transparent hover:border-b-primary-cta focus:text-primary-cta focus:border-b-primary-cta"
                     >Course</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    class="inline-block border-b cursor-pointer hover:text-primary-cta border-b-transparent hover:border-b-primary-cta focus:text-primary-cta focus:border-b-primary-cta"
                     >About Us</a
                   >
                 </li>
                 <li>
                   <a
                     href="#"
-                    class="inline-block border-b cursor-pointer md:hover:text-primary-cta border-b-transparent hover:border-b-primary-cta"
+                    class="inline-block border-b cursor-pointer hover:text-primary-cta border-b-transparent hover:border-b-primary-cta focus:text-primary-cta focus:border-b-primary-cta"
                     >Contact Us</a
                   >
                 </li>
-                <div class="flex items-center gap-4">
+                <div class="flex items-center gap-4 max-md:mt-auto">
                   <li>
                     <a
                       href="#"
-                      class="inline-block px-8 py-2 border border-[#ECECEC] rounded-full text-primary-text bg-[#ECECEC] hover:bg-white"
+                      class="inline-block px-8 py-2 border border-[#ECECEC] rounded-full text-primary-text bg-[#ECECEC] hover:bg-white focus:bg-white"
                       >Log In</a
                     >
                   </li>
                   <li>
                     <a
                       href="#"
-                      class="inline-block px-8 py-2 text-white border rounded-full border-primary-cta bg-primary-cta hover:bg-white hover:text-primary-cta"
+                      class="inline-block px-8 py-2 text-white border rounded-full border-primary-cta bg-primary-cta hover:bg-white focus:bg-white hover:text-primary-cta focus:text-primary-cta"
                       >Sign Up</a
                     >
                   </li>
@@ -113,9 +113,9 @@
     <main class="flex flex-col w-full gap-8 pt-4">
       <section class="px-4">
         <div
-          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto overflow-hidden text-center md:flex-row"
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto overflow-hidden text-center sm:flex-row"
         >
-          <div class="md:text-left md:w-[60%] flex flex-col">
+          <div class="sm:text-left sm:w-full md:w-[60%] flex flex-col">
             <h1 class="text-4xl font-bold md:text-5xl text-primary-text">
               Unlock Your Potential with
               <span
@@ -130,12 +130,12 @@
             </p>
             <a
               href="#"
-              class="inline-block p-4 mx-auto mt-4 text-white transition-all duration-500 border-2 cursor-pointer trsacking-wider md:ml-0 md:mt-8 border-primary-cta bg-primary-cta w-fit rounded-2xl hover:text-primary-cta hover:bg-white"
+              class="inline-block p-4 mx-auto mt-4 text-white transition-all duration-500 border-2 cursor-pointer trsacking-wider sm:ml-0 md:mt-8 border-primary-cta bg-primary-cta w-fit rounded-2xl hover:text-primary-cta hover:bg-white"
               >Register now</a
             >
             <div class="mt-4 md:mt-auto">
               <div
-                class="flex items-center justify-center mx-auto md:mx-0 md:justify-start"
+                class="flex items-center justify-center mx-auto sm:mx-0 sm:justify-start"
               >
                 <img src="./assets/row1.png" alt="" class="max-w-14" />
                 <img src="./assets/row2.png" alt="" class="-m-2.5 max-w-14" />
@@ -150,7 +150,7 @@
               </p>
             </div>
           </div>
-          <div class="flex md:w-[40%] md:grid md:grid-cols-2">
+          <div class="flex sm:w-full md:w-[40%] md:grid md:grid-cols-2">
             <img
               src="./assets/heroimage1.png"
               alt="students studying on a tablet"
@@ -241,10 +241,10 @@
 
       <section class="px-4">
         <div
-          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto text-center md:text-left"
+          class="flex flex-col justify-center max-w-5xl gap-4 mx-auto text-center sm:text-left"
         >
           <div
-            class="flex flex-col items-center justify-center gap-4 md:flex-row md:items-stretch *:w-full"
+            class="flex flex-col items-center justify-center gap-4 sm:flex-row sm:items-stretch *:w-full"
           >
             <div
               class="flex flex-col items-center justify-center gap-4 md:items-start"
@@ -287,13 +287,13 @@
           </div>
 
           <div
-            class="flex flex-col items-center justify-center gap-4 *:w-full md:mt-4"
+            class="flex flex-col items-center justify-center gap-4 *:w-full sm:mt-4"
           >
             <h2 class="text-3xl font-bold text-primary-text">
               What We Stand For:
             </h2>
             <div
-              class="flex flex-col items-center md:items-stretch justify-center gap-4 md:flex-row *:w-full"
+              class="flex flex-col items-center sm:items-stretch justify-center gap-4 sm:flex-row *:w-full"
             >
               <!-- card one -->
               <div
@@ -365,7 +365,7 @@
               alt=""
             />
             <div
-              class="flex flex-col items-center justify-center gap-4 p-4 bg-white rounded-2xl md:grid md:grid-cols-3"
+              class="flex flex-col items-center justify-center gap-4 p-4 bg-white rounded-2xl sm:grid sm:grid-cols-2 md:grid-cols-3"
             >
               <div class="flex flex-col items-center justify-center gap-2">
                 <img src="./assets/learn-anywhere.png" alt="" />
